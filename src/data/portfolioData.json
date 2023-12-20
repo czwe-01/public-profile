@@ -1,0 +1,326 @@
+{
+  "personalInfo": {
+    "name": "Thulasize Nkambule",
+    "field": "Web developer",
+    "picture": "logo.png"
+  },
+  "socials": {
+    "FaLinkedinIn": "https://www.linkedin.com/in/thulasizwe-nkambule-843688138/",
+    "FaGithub": "https://github.com/czwe-01",
+    "FaFreeCodeCamp": "https://www.freecodecamp.org/fcc86134ea9-6d05-4388-a228-098c6560a9d2",
+    "FaHackerrank": "https://www.hackerrank.com/thulasizwe_nkam1"
+  },
+  "about": {
+    "about_me": "I have worked on projects at every stage: from gathering initial requirements to deploying a finished product. My code is efficient and clean. I am skilled at applying OO design principles and ensuring maximum re-usability of components. User-friendly and intuitive user interfaces are a must with any client-facing technology. My skills lie in creating intuitive, bug-free, and modern GUIs. My front-end framework of choice is React for web development and React Native for mobile app development.",
+    "education": [
+      {
+        "name": "umuzi.org",
+        "year": "2021 —  2022",
+        "comment": "Umuzi bootCamp is where I learned most of my technical skills with practice and projects"
+      },
+
+      {
+        "name": "Sefako Makgatho University",
+        "year": "2017 — 2021",
+        "comment": "I studied and graduated in Mathematical science majoring in Computer science and Statistics"
+      }
+    ],
+
+    "experience": [
+      {
+        "name": "ICT assistant - SMU",
+        "year": "2018 —  2019",
+        "comment": "Assisted students with basic computer needs such as installing software, replacing parts and computer training"
+      },
+      {
+        "name": "Freelancer",
+        "year": "2020 —  2021",
+        "comment": "I helped a startup company develop their online presence and identity by creating a logo and website."
+      },
+      {
+        "name": "Jr Web Dev Recruit- Umuzi.org",
+        "year": "2022-present",
+        "comment": "Setting development milestones, full stack development of MVP, reviewing peer code and upskilling in problem-solving on platforms such as Hackerrank, Coderbyte, CodeWars, etc"
+      },
+      {
+        "name": "Jr Tech Lead - Umuzi.org",
+        "year": "2023-present",
+        "comment": "Umuzi is a non-profit that finds high-potential young people, trains them in high-value digital skills, and launches their careers. My responsibilities include: Supervise team members from a lower cohort, help team members resolve technical blockers and conflicts, delegate and advice on tasks, issue feedback and evaluate risk"
+      }
+    ]
+  },
+  "contactInfo": [
+    {
+      "label": "email",
+      "value": "thulasizwe.nkambule@umuzi.org",
+      "href": "mailto:thulasizwe.nkambule@umuzi.org"
+    },
+    {
+      "label": "phone",
+      "value": "0671236566",
+      "href": "tel:+27671236566"
+    },
+    {
+      "label": "date of birth",
+      "value": "Jan 15 1998"
+    },
+    {
+      "label": "location",
+      "value": "Pretoria, Gauteng, SA"
+    }
+  ],
+  "achievements": {
+    "certificates": [
+      {
+        "name": "FCC: Responsive Web Design",
+        "year": "July 26, 2020",
+        "comment": "Developer Certification, representing approximately 300 hours of coursework.",
+        "url": "https://freecodecamp.org/certification/fcc86134ea9-6d05-4388-a228-098c6560a9d2/responsive-web-design"
+      },
+
+      {
+        "name": "FCC: JS Algorithms and Data Structures",
+        "year": "July 26, 2020",
+        "comment": "Developer Certification, representing approximately 300 hours of coursework",
+        "url": "https://freecodecamp.org/certification/fcc86134ea9-6d05-4388-a228-098c6560a9d2/javascript-algorithms-and-data-structures"
+      },
+      {
+        "name": "BSc Mathematical Science",
+        "year": "Mar 25, 2022",
+        "comment": "Graduated at Sefako Makgatho University in Pretoria, Garankuwa. Majoring in maths and computer science"
+      },
+      {
+        "name": "National Certificate in Information Technology (System Development) (SAQA ID 48872) NQF Level 5",
+        "year": "2023",
+        "comment": "As part of my journey at Umuzi, I required to complete a National Certificate"
+      }
+    ],
+    "badges": [
+      {
+        "name": "Reviewer of the week",
+        "year": "Sep 26, 2022",
+        "comment": "Made the most high quality reviews the month of September"
+      },
+      {
+        "name": "Double-Checked",
+        "year": "Sept 29, 2022",
+        "comment": " Updated a design more than ten times to improve its presentation quality - Developers with this badge are likely to double check and confirm their work"
+      },
+      {
+        "name": "Single Shot",
+        "year": "Sept 29, 2022",
+        "comment": " Updated a project only once - Developers with this badge are able to follow guidelines or work brief in advance to prevent time delay during projects."
+      },
+      {
+        "name": "Peer Recognition",
+        "year": "Sept 29, 2022",
+        "comment": "Other developers liked the project of the developer - Developers with this badge are able to write high quality code that appeals to the aesthetic taste of developers in general"
+      },
+      {
+        "name": "Eye on News",
+        "year": "Sept 29, 2022",
+        "comment": "Checked announcements, campaigns, promotions and news published. Developers with this badge are more likely to be active users with social presence"
+      },
+      {
+        "name": "Spotter",
+        "year": "Sept 29, 2022",
+        "comment": "The developer has identified an issue with the system, figured out a glitch or suggested an improvement to an existing function by taking part in our code bounty program."
+      }
+    ]
+  },
+  "techStacks": [
+    "all",
+    "html",
+    "css",
+    "javascript",
+    "nodejs",
+    "sql",
+    "react",
+    "expressjs",
+    "file system"
+  ],
+  "projects": [
+    {
+      "name": "My Tribute Page",
+      "year": "2020",
+      "stack": ["html", "css"],
+      "url": "https://codepen.io/czwe_01/pen/xBQqrj",
+      "description": "This project is a freeCodeCamp project for Responsive Web design certification. It is a tribute of James Ingrams",
+      "image": "tributePage.png"
+    },
+    {
+      "name": "Build A Survey Form",
+      "year": "2020",
+      "stack": ["html", "css"],
+      "url": "https://codepen.io/czwe_01/pen/GewrKO",
+      "description": "This project is a freeCodeCamp project for Responsive Web design certification. It is a survey form",
+      "image": "surveyForm.png"
+    },
+    {
+      "name": "Technical Documentation",
+      "year": "2020",
+      "stack": ["html", "css"],
+      "url": "https://codepen.io/czwe_01/pen/WmKYqR",
+      "description": "This project is a freeCodeCamp project for Responsive Web design certification. It is a technical documentation website",
+      "image": "technicalDoc.png"
+    },
+    {
+      "name": "Ladies In Hygiene",
+      "year": "2020",
+      "stack": ["html", "css", "javascript"],
+      "url": "https://ladiesinhygiene.netlify.app/",
+      "description": "I was involved in building a website for a fumigation and hygiene startup business. I was responsible for the front-end development and design.",
+      "image": "ladiesInHygiene.png"
+    },
+    {
+      "name": "Personal portfolio",
+      "year": "2022",
+      "stack": ["html", "css", "javascript"],
+      "url": "https://czwe-01.github.io/",
+      "description": "This is the website you are currently on, my personal portfolio",
+      "image": "portfolio.png"
+    },
+    {
+      "name": "Morse code",
+      "year": "2022",
+      "stack": ["assertions", "javascript"],
+      "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-184-assertive-programming-kata-javascript",
+      "description": "This is program that has two functions, it  can convert morse code to numbers, letters of the alphabets and special characters, and it can convert numbers, special characters and letters of the alphabets to morse code ",
+      "image": "",
+      "id": "184"
+    },
+    {
+      "name": "Consume Github API",
+      "year": "2021",
+      "stack": ["javascript", "API"],
+      "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-186-consume-github-api-javascript",
+      "description": "The function outputs a list or array of pull requests on the repo such that the PRs were created, updated, merged or closed between the given two dates. For each PR include the id, user (who opened the PR), title, state, and when it was created. While for private repos a token will be required, the function should be able to work on public repos (eg. ACN-syllabus) without needing a token.",
+      "image": "",
+      "id": "186"
+    },
+    {
+      "name": "Semitone difference",
+      "year": "2022",
+      "stack": ["html", "css", "javascript", "tdd"],
+      "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-199-semitone-difference-basic-algorithm-javascript",
+      "description": "This program lets a user get two random notes from the note circle and input the distance betweeen the notes. It tells you when you are correct and when you are incorrect and also allows you to reveal the answer.",
+      "image": "semitone.png",
+      "id": "199"
+    },
+    {
+      "name": "Shop Database using sql",
+      "year": "5/26/2022, 6:05:30 PM",
+      "stack": ["sql", "docker", "javascript", "nodejs"],
+      "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-200-sql-",
+      "description": "This program is written to create an database called 'shop' with 5 tables (customer, employees, orders, payments and products) from the following is queried -SELECT ALL records from table Customers SELECT records only from the name column in the Customers table, Show the name of the Customer whose CustomerID is 1, UPDATE the record for CustomerID = 1 on the Customer table so that the name is “Lerato Mabitso”, DELETE the record from the Customers table for customer 2 (CustomerID = 2), Select all unique statuses from the Orders table and get a count of the number of orders for each unique status, Return the MAXIMUM payment made on the PAYMENTS table, Select all customers from the “Customers” table, sorted by the “Country” column, Select all products with a price BETWEEN R100 and R600, Select all fields from “Customers” where the country is “Germany” AND the city is “Berlin”, Select all fields from “Customers” where the city is “Cape Town” OR “Durban”, Select all records from Products where the Price is GREATER than R500, Return the sum of the Amounts on the Payments table, Count the number of shipped orders in the Orders table, Return the average price of all Products, in Rands and Dollars (assume the exchange rate is R12 to the Dollar), Using INNER JOIN create a query that selects all Payments with Customer information, Select all products that have turnable front wheels.",
+      "image": "",
+      "id": "200"
+    },
+    {
+      "name": "Memory Game",
+      "year": "2022",
+      "stack": ["html", "css", "javascript", "tdd"],
+      "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-222-memory-game-in-vanilla-js-javascript",
+      "description": "This a memory game app in which a user tries to match images that look the same. The game has 3 features, a timer that telss you how long you took to match all cards, a configurable grid size that allows you to choose from different sizes and a filp counter that tells you how many times you flipped the cards to match them all",
+      "image": "memory-game.png",
+      "id": "222"
+    },
+    {
+      "name": "Email Random Inspirational Quote",
+      "year": "2022",
+      "stack": ["nodejs", "javascript", "tdd"],
+      "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-230-email-random-inspirational-quote-javascript",
+      "description": "This program sends a random inspirational quote to the email that is parsed to it",
+      "image": "",
+      "id": "230"
+    },
+    {
+      "name": "Node File IO",
+      "year": "2022",
+      "stack": [
+        "nodejs",
+        "javascript",
+        "tdd",
+        "sql",
+        "html",
+        "css",
+        "expressjs",
+        "file system"
+      ],
+      "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-280-node-file-io-javascript",
+      "description": "This is a program that allows you to create a new visitor, update the visitor, delete the visitor, view the visitor, get all the visitors, get the last visitor and delete all the visitors in a database.",
+      "image": "node-&-file-io.png",
+      "id": "280"
+    },
+    {
+      "name": "Tilde Mockups",
+      "year": "2022",
+      "stack": [
+        "nodejs",
+        "javascript",
+        "tdd",
+        "sql",
+        "html",
+        "css",
+        "expressjs",
+        "file system"
+      ],
+      "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-280-node-file-io-javascript",
+      "description": "A public profile page that can act as a kind of portfolio for a learner. This page can be sent out to potential employers and make the job hunt easier.",
+      "image": "node-&-file-io.png",
+      "id": "280"
+    },
+    {
+      "name": "React and Redux recipe search",
+      "year": "2022",
+      "stack": ["nodejs", "javascript", "tdd", "redux", "react", "css", "apis"],
+      "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-280-node-file-io-javascript",
+      "description": "I used React and Redux to build a kick-ass web app for searchung for recipes",
+      "image": "node-&-file-io.png",
+      "id": "532"
+    },
+    {
+      "name": "Military game",
+      "year": "2023",
+      "stack": ["react", "css", "javascript", "tdd", "redux", "redux-sagas"],
+      "url": "#",
+      "description": "Millitary game is a game in which the player has to kill all the enemies to accumulate points at each stage, without being killed three times.",
+      "id": "538",
+      "image": "node-&-file-io.png"
+    },
+    {
+      "name": "QR conference connector",
+      "year": "2023",
+      "stack": [
+        "css",
+        "javascript",
+        "tdd",
+        "sql",
+        "sqlLite",
+        "expo",
+        "react-native"
+      ],
+      "url": "#",
+      "description": "Millitary game is a game in which the player has to kill all the enemies to accumulate points at each stage, without being killed three times.",
+      "id": "794",
+      "image": "node-&-file-io.png"
+    },
+    {
+      "name": "Simple variometer",
+      "year": "2023",
+      "stack": [
+        "css",
+        "javascript",
+        "tdd",
+        "sql",
+        "redux",
+        "expo",
+        "react-native"
+      ],
+      "url": "#",
+      "description": "Millitary game is a game in which the player has to kill all the enemies to accumulate points at each stage, without being killed three times.",
+      "id": "794",
+      "image": "node-&-file-io.png"
+    }
+  ]
+}
