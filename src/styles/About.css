@@ -2,11 +2,6 @@
   --bg-gradient-onyx: hsl(0, 0%, 83%);
 
   --bg-gradient-jet: hsl(0, 0%, 100%);
-  --bg-gradient-yellow-1: linear-gradient(
-    to bottom right,
-    hsl(45, 100%, 71%) 0%,
-    hsla(36, 100%, 69%, 0) 50%
-  );
 
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);

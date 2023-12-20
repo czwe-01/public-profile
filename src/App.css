@@ -7,7 +7,10 @@
     rgb(255, 218, 107) 0%,
     hsla(36, 100%, 69%, 0) 50%
   );
-
+  --bg-primary: #e0cfa3;
+  --bg-secondary: #eeebda;
+  --dark-blue: #0b2136;
+  --highlight-gold: #cbbc5a;
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
@@ -16,7 +19,7 @@
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
+  --vegas-gold: #ceb15a;
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -43,7 +46,7 @@
 }
 
 html {
-  background-color: var(--bg-gradient-onyx);
+  background-color: var(--bg-primary);
 }
 
 a {
@@ -78,7 +81,7 @@ span {
 }
 
 article {
-  background: var(--bg-gradient-yellow-1);
+  background: var(--bg-secondary);
   border-radius: 10px;
   box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 1;
