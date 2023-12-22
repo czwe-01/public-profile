@@ -1,6 +1,6 @@
 import { Chip } from "@mui/material";
 import React from "react";
-import { FaEye, FaLink } from "react-icons/fa";
+import { FaLink } from "react-icons/fa";
 import IconBox from "../../IconBox/IconBox";
 import "./Project.css";
 
@@ -10,7 +10,7 @@ function Project({ item }) {
       <figure className="project-img">
         <div className="project-item-icon-box">
           <a href={item.url} target="_blank" rel="noreferrer">
-            <IconBox detail={{ icon: <FaLink /> }} />
+            <IconBox icon={<FaLink />} />
           </a>
         </div>
 

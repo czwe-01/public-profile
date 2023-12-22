@@ -4,12 +4,17 @@
     "field": "Web developer",
     "picture": "logo.png"
   },
-  "socials": {
-    "FaLinkedinIn": "https://www.linkedin.com/in/thulasizwe-nkambule-843688138/",
-    "FaGithub": "https://github.com/czwe-01",
-    "FaFreeCodeCamp": "https://www.freecodecamp.org/fcc86134ea9-6d05-4388-a228-098c6560a9d2",
-    "FaHackerrank": "https://www.hackerrank.com/thulasizwe_nkam1"
-  },
+  "socials": [
+    {
+      "linkedin": "https://www.linkedin.com/in/thulasizwe-nkambule-843688138/"
+    },
+    { "github": "https://github.com/czwe-01" },
+    {
+      "freeCodeCamp": "https://www.freecodecamp.org/fcc86134ea9-6d05-4388-a228-098c6560a9d2"
+    },
+    { "hackerrank": "https://www.hackerrank.com/thulasizwe_nkam1" }
+  ],
+
   "about": {
     "about_me": "I have worked on projects at every stage: from gathering initial requirements to deploying a finished product. My code is efficient and clean. I am skilled at applying OO design principles and ensuring maximum re-usability of components. User-friendly and intuitive user interfaces are a must with any client-facing technology. My skills lie in creating intuitive, bug-free, and modern GUIs. My front-end framework of choice is React for web development and React Native for mobile app development.",
     "education": [
@@ -128,17 +133,7 @@
       }
     ]
   },
-  "techStacks": [
-    "all",
-    "html",
-    "css",
-    "javascript",
-    "nodejs",
-    "sql",
-    "react",
-    "expressjs",
-    "file system"
-  ],
+  "techStacks": ["all", "html", "css", "javascript", "nodejs", "sql", "redux"],
   "projects": [
     {
       "name": "My Tribute Page",

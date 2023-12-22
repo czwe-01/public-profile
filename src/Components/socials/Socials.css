@@ -3,3 +3,9 @@
   font-size: "2em";
   margin: ".62em";
 }
+
+.socials {
+  transform: scale(1.5);
+  display: flex;
+  justify-content: center;
+}

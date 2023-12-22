@@ -3,6 +3,7 @@ import { experimentalStyled as styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import "./Skill.css";
+import IconBox from "../../IconBox/IconBox";
 
 function Skill({ skill, index }) {
   const Item = styled(Paper)(({ theme }) => ({
@@ -15,7 +16,7 @@ function Skill({ skill, index }) {
   return (
     <Grid item xs={2} sm={4} md={4} key={index}>
       <Item className="skill">
-        <div className="icon-box">{skill.icon}</div>
+        <IconBox icon={skill.icon} />
         <div>
           <p className="skill-title">{skill.name}</p>
         </div>

@@ -5,23 +5,29 @@ import {
   FaGithub,
   FaFreeCodeCamp,
   FaHackerrank,
+  FaQuestion,
 } from "react-icons/fa";
 import portfolioData from "../../data/portfolioData.json";
-
-const iconStyles = { color: "black", fontSize: "2em", margin: ".62em" };
+import IconBox from "../IconBox/IconBox";
 
 function Socials() {
   const { socials } = portfolioData;
 
-  console.log(socials);
   return (
     <div className="socials">
-      {Object.keys(socials).map((social, index) => {
-        const link = Object.values(socials)[index];
-        const component = social === ""
+      {socials.map((social, index) => {
+        const name = Object.keys(social)[0];
+        const link = Object.values(social)[0];
+        const icon = {
+          linkedin: <FaLinkedinIn />,
+          github: <FaGithub />,
+          freeCodeCamp: <FaFreeCodeCamp />,
+          hackerrank: <FaHackerrank />,
+        }[name] || <FaQuestion />;
+
         return (
           <a key={index} href={link} target="_blank" rel="noreferrer">
-            
+            <IconBox icon={icon} />
           </a>
         );
       })}

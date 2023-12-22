@@ -27,7 +27,7 @@ function Contacts() {
         return (
           <a href={detail.href} className="contact-link" key={index}>
             <li className="contact-item">
-              <IconBox detail={detail} />
+              <IconBox icon={detail.icon} />
 
               <div className="contact-info">
                 <p className="contact-title">{detail.label}</p>
