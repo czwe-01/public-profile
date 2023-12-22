@@ -6,12 +6,7 @@ import Box from "@mui/material/Box";
 import About from "./about/About";
 import Portfolio from "./portfolio/Portfolio";
 import Achievements from "./achievements/Achievements";
-import {
-  FaArrowsAltH,
-  FaCompressArrowsAlt,
-  FaGulp,
-  FaLongArrowAltUp,
-} from "react-icons/fa";
+import { FaLongArrowAltUp } from "react-icons/fa";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

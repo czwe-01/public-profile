@@ -168,7 +168,7 @@ a {
     --fs-8: 12px;
   }
   .sidebar {
-    margin-inline: auto;
+    margin: 0.62em;
     padding: 15px;
   }
   .icon-box {
@@ -202,19 +202,18 @@ a {
     width: calc(100% - 64px);
   }
 }
-@media (min-width: 768px) {
+
+@media only screen and (max-width: 768px) {
   .sidebar {
-    width: 700px;
     border-radius: 1em;
-  }
-  .contacts-list {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px 15px;
+    margin: 0.62em;
   }
 }
+
 @media (min-width: 1024px) {
   .sidebar {
     width: 950px;
+    margin-inline: auto;
     box-shadow: var(--shadow-5);
   }
 }

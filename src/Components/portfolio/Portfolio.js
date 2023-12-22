@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "../../styles/Portfolio.css";
 import portfolioData from "../../data/portfolioData.json";
 import Projects from "./projects/Projects";
+import FilterList from "./filter-item/FilterList";
+import FilterSelect from "./filter-select/FilterSelect";
 
 const projectData = portfolioData.projects;
 
@@ -28,8 +30,8 @@ export default function Portfolio() {
 
       <section className="projects">
         <div>
-          {/* <FilterList handleChange={handleChange} /> */}
-          {/* <FilterSelect handleChange={handleChange} /> */}
+          <FilterList handleChange={handleChange} />
+          <FilterSelect handleChange={handleChange} />
         </div>
         <Projects data={data} />
       </section>
