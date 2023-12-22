@@ -36,4 +36,5 @@ jobs:
           node-version: 18.x
       - run: npm install -g firebase-tools
       - name: Set up Firebase token
-      - run: firebase deploy --only hosting --token ${{secrets.FIREBASE_SERVICE_ACCOUNT_PUBLIC_PORTFOLIO_2AC34}}
+        run: echo "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PUBLIC_PORTFOLIO_2AC34 }}" > $HOME/firebase-token.json
+      - run: firebase deploy --only hosting --token "$(cat $HOME/firebase-token.json)"
