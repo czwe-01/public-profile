@@ -1,6 +1,9 @@
 :root {
   --bg-gradient-onyx: hsl(0, 0%, 83%);
-
+  --bg-primary: #e0cfa3;
+  --bg-secondary: #eeebda;
+  --dark-blue: #0b2136;
+  --highlight-gold: #cbbc5a;
   --bg-gradient-jet: hsl(0, 0%, 100%);
 
   --jet: hsl(0, 0%, 22%);
@@ -44,6 +47,7 @@
 h1 {
   display: flex;
   flex-direction: row;
+  color: var(--light-gray-70)
 }
 
 h1 > span {
@@ -54,7 +58,7 @@ h1 > span {
   top: 30px;
 }
 .about-text {
-  color: var(--smoky-black);
+  color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;

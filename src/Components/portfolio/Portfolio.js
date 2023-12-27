@@ -30,8 +30,8 @@ export default function Portfolio() {
 
       <section className="projects">
         <div>
-          <FilterList handleChange={handleChange} />
-          <FilterSelect handleChange={handleChange} />
+          <FilterList handleChange={handleChange} filter={filter} />
+          <FilterSelect handleChange={handleChange} filter={filter} />
         </div>
         <Projects data={data} />
       </section>

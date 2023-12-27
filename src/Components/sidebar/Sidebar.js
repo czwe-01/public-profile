@@ -3,6 +3,7 @@ import "../../styles/Sidebar.css";
 import Contacts from "./Contacts";
 import SideBarHeader from "./SideBarHeader";
 import Socials from "../socials/Socials";
+import Separator from "../separator/Separator";
 
 export default function Sidebar() {
   return (
@@ -10,11 +11,9 @@ export default function Sidebar() {
       <SideBarHeader />
 
       <div className="sidebar-info_more">
-        <div className="separator"></div>
-
+        <Separator />
         <Contacts />
-
-        <div className="separator"></div>
+        <Separator />
         <Socials />
       </div>
     </aside>

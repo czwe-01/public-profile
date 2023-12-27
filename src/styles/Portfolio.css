@@ -1,13 +1,14 @@
 .filter-list {
   display: none;
+  overflow: auto;
 }
 .filter-select-box {
   position: relative;
   margin-bottom: 25px;
 }
 .filter-select {
-  background: #fff;
-  color: #535353;
+  background: #535353;
+  color: var(--orange-yellow-crayola);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,36 +21,11 @@
 .filter-select.active .select-icon {
   transform: rotate(0.5turn);
 }
-.select-list {
-  background: #fff;
-  position: absolute;
-  top: calc(100% + 6px);
-  width: 100%;
-  padding: 6px;
-  border: 1px solid var(--jet);
-  z-index: 2;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: 0.15s ease-in-out;
-}
+
 .filter-select.active + .select-list {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-}
-.select-item button {
-  background: #fff;
-  color: #535353;
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  text-transform: capitalize;
-  width: 100%;
-  padding: 8px 10px;
-}
-.select-item button:hover {
-  background-color: hsl(240, 2%, 20%);
-  color: #fff;
 }
 
 @keyframes scaleUp {
@@ -64,34 +40,6 @@
 @media (min-width: 450px) {
   .project-img {
     height: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .filter-select-box {
-    display: none;
-  }
-  .filter-list {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1em;
-    margin-bottom: 2em;
-    overflow-x: scroll;
-  }
-  .filter-item button {
-    color: #535353;
-    font-size: var(--fs-5);
-    padding: 0.2em 1em;
-    transition: var(--transition-1);
-  }
-  .filter-item button:hover {
-    color: #fff;
-    background-color: #535353;
-  }
-  .filter-item button.active {
-    color: #fff;
-    background-color: #535353;
   }
 }
 

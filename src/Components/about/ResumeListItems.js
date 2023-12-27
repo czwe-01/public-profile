@@ -1,15 +1,17 @@
+import Separator from "../separator/Separator"
 import React from "react";
 
 function ResumeListItems(props) {
   if (props.url !== undefined) {
     return (
-      <a href={props.url} target="_blank" rel="noreferrer">
-        <li className="timeline-item" key={props.index}>
+      <li className="timeline-item" key={props.index}>
+        <a href={props.url} target="_blank" rel="noreferrer">
           <h4 className="h4 timeline-item-title">{props.name}</h4>
           <span>{props.year}</span>
-          <p className="timeline-text">{props.comment}</p>
-        </li>
-      </a>
+          <p className="timeline-text">{props.comment}</p>{" "}
+        </a>
+        <Separator />
+      </li>
     );
   } else
     return (
@@ -17,6 +19,7 @@ function ResumeListItems(props) {
         <h4 className="h4 timeline-item-title">{props.name}</h4>
         <span>{props.year}</span>
         <p className="timeline-text">{props.comment}</p>
+        <Separator />
       </li>
     );
 }

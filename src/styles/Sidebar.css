@@ -1,4 +1,11 @@
 :root {
+  --primary-color: #a1a2a6;
+  --secondary-color: #234459;
+  --evergreen: #1d7373;
+  --gold: #f2cd5e;
+  --happy-gold: #d9a441;
+  --bg-gradient-onyx: hsl(0, 0%, 83%);
+
   --bg-primary: #e0cfa3;
   --bg-secondary: #eeebda;
   --dark-blue: #0b2136;
@@ -16,20 +23,18 @@
 
 .sidebar.active {
   max-height: 700px;
-  background-color: var(--bg-secondary);
-  border: 2px solid var(--white-1);
+  background: rgba(99, 98, 98, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  border: 1px solid rgba(99, 98, 98, 0.62);
 }
 
 .socials {
   display: flex;
   flex-direction: row;
   text-align: left;
-}
-.separator {
-  width: 100%;
-  height: 1px;
-  background: var(--jet);
-  margin: 16px 0;
 }
 
 @keyframes fade {
@@ -40,25 +45,7 @@
     opacity: 1;
   }
 }
-.h2,
-.h3,
-.h4,
-.h5 {
-  text-transform: capitalize;
-}
-.h2 {
-  font-size: var(--fs-1);
-}
-.h3 {
-  font-size: var(--fs-2);
-}
-.h4 {
-  font-size: var(--fs-4);
-}
-.h5 {
-  font-size: var(--fs-7);
-  font-weight: var(--fw-500);
-}
+
 .sidebar {
   margin-bottom: 15px;
   max-height: 112px;
@@ -74,22 +61,18 @@
   transition: 2s;
 }
 
-a {
-  color: var(--bittersweet-shimmer);
-  font-weight: var(--fw-600);
-}
 .info-content .name {
   color: var(--smoky-black);
-  font-size: var(--fs-3);
+  font-size: var(--fs-1);
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
 }
 .info-content .title {
-  color: var(--white-1);
+  color: var(--highlight-gold);
   background: var(--onyx);
-  font-size: var(--fs-8);
-  font-weight: var(--fw-300);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
   width: max-content;
   padding: 3px 12px;
 }
@@ -133,22 +116,17 @@ a {
   text-align: left;
 }
 .contact-info {
+  color: var(--light-gray);
   max-width: calc(100vw - 46px);
   width: calc(100vw - 46px);
 }
 .contact-title {
-  color: var(--smoky-black);
+  color: var(--bg-primary);
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
 }
-.contact-info :is(.contact-link, time, address) {
-  color: var(--smoky-black);
-  font-size: var(--fs-7);
-}
-.contact-info address {
-  font-style: normal;
-}
+
 @keyframes scaleUp {
   0% {
     transform: scale(0.5);
@@ -219,7 +197,7 @@ a {
 }
 @media (min-width: 1250px) {
   body::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
   }
   body::-webkit-scrollbar-track {
     background: var(--smoky-black);
@@ -275,9 +253,5 @@ a {
   .contact-info :is(.contact-link, time, address) {
     --fs-7: 14px;
     font-weight: var(--fw-300);
-  }
-  .separator:last-of-type {
-    margin: 15px 0;
-    opacity: 0;
   }
 }

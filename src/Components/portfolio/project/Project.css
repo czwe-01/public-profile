@@ -48,9 +48,18 @@
   border-radius: 16px;
   align-items: center;
   padding: 2px;
-  background-color: var(--timber-wolf);
+  background: linear-gradient(var(--jet), var(--light-gray-70)) padding-box,
+    linear-gradient(
+        to right,
+        var(--orange-yellow-crayola),
+        var(--jet),
+        var(--onyx)
+      )
+      border-box;
+  border-width: 4px;
   box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .project-item.active {
   display: flex;
   flex-direction: column;
@@ -89,6 +98,9 @@
   transition: var(--transition-1);
 }
 .project-item:hover .project-img::before {
+  background: hsla(0, 0%, 0%, 0.5);
+  background: hsla(0, 0%, 0%, 0.5);
+  background: hsla(0, 0%, 0%, 0.5);
   background: hsla(0, 0%, 0%, 0.5);
 }
 
@@ -140,7 +152,7 @@
 }
 
 .project-item:hover {
-  background-color: var(--jet);
+  background-color: hsla(0, 0%, 0%, 0.5);
   .project-title {
     color: var(--bg-secondary);
   }

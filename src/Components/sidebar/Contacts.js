@@ -25,17 +25,24 @@ function Contacts() {
     <ul className="contacts-list">
       {contactInfo.map((detail, index) => {
         return (
-          <a href={detail.href} className="contact-link" key={index}>
-            <li className="contact-item">
-              <IconBox icon={detail.icon} />
+          <li className="contact-item">
+            <IconBox icon={detail.icon} />
+            {detail.href ? (
+              <a href={detail.href} key={index}>
+                <div className="contact-info">
+                  <p className="contact-title">{detail.label}</p>
 
+                  {detail.value}
+                </div>
+              </a>
+            ) : (
               <div className="contact-info">
                 <p className="contact-title">{detail.label}</p>
 
                 {detail.value}
               </div>
-            </li>
-          </a>
+            )}
+          </li>
         );
       })}
     </ul>
