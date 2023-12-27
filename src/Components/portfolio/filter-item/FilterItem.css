@@ -1,0 +1,33 @@
+.filter-item button {
+  background: var(--jet);
+  border-radius: 50em;
+  color: var(--light-gray);
+  border: 2px solid transparent;
+  font-size: var(--fs-5);
+  padding: 0.2em 1em;
+  transition: var(--transition-1);
+}
+
+@media (min-width: 768px) {
+  .filter-select-box {
+    display: none;
+  }
+
+  .filter-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+}
+
+.filter-item button:hover {
+  color: var(--jet);
+  background-color: var(--light-gray-70);
+}
+
+.filter-item.active button {
+  color: var(--jet);
+  background-color: var(--light-gray-70);
+}

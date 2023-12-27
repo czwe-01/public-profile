@@ -1,0 +1,20 @@
+.separator {
+  width: 100%;
+  height: 1px;
+  background: #2929293a;
+  margin: 16px 0;
+}
+
+@media (min-width: 1024px) {
+  .separator:last-of-type {
+    margin: 15px 0;
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1250px) {
+  .separator:last-of-type {
+    margin: 15px 0;
+    opacity: 0;
+  }
+}

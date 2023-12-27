@@ -6,16 +6,13 @@ function TimeLineList(props) {
     <ol className="timeline-list">
       {data[props.category].reverse().map((item, index) => {
         return (
-          <div key={index}>
-            <ResumeListItems
-              url={item.url}
-              name={item.name}
-              year={item.year}
-              comment={item.comment}
-              index={index}
-            />
-            <div className="separator"></div>
-          </div>
+          <ResumeListItems
+            url={item.url}
+            name={item.name}
+            year={item.year}
+            comment={item.comment}
+            index={index}
+          />
         );
       })}
     </ol>

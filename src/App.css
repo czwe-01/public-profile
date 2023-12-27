@@ -1,4 +1,9 @@
 :root {
+  --primary-color: #1c2c40;
+  --secondary-color: #234459;
+  --evergreen: #1d7373;
+  --gold: #f2cd5e;
+  --happy-gold: #d9a441;
   --bg-gradient-onyx: hsl(0, 0%, 83%);
 
   --bg-gradient-jet: hsl(0, 0%, 100%);
@@ -46,21 +51,34 @@
 }
 
 html {
-  background-color: var(--bg-primary);
+  --pattern-size: 5rem;
+  background: linear-gradient(to bottom, var(--jet), #0000),
+    linear-gradient(to bottom right, #fff1 50%, transparent 50%),
+    linear-gradient(to bottom left, #fff1 50%, transparent 50%), #333;
+  background-size: cover, var(--pattern-size) var(--pattern-size),
+    var(--pattern-size) var(--pattern-size), cover;
+  background-position: top center;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: var(--light-gray-70);
 }
 
 #simple-tab-0.Mui-selected,
 #simple-tab-1.Mui-selected,
 #simple-tab-2.Mui-selected {
-  color: var(--jet);
+  color: var(--highlight-gold);
+}
+
+#simple-tab-0,
+#simple-tab-1,
+#simple-tab-2 {
+  color: var(--light-gray-70);
 }
 
 .css-1aquho2-MuiTabs-indicator {
-  background-color: var(--vegas-gold) !important;
+  background-color: var(--orange-yellow-crayola) !important;
 }
 
 img,
@@ -80,12 +98,39 @@ span {
   outline-color: var(--orange-yellow-crayola);
 }
 
+.h2,
+.h3,
+.h4,
+.h5 {
+  text-transform: capitalize;
+  color: var(--white-2);
+}
+.h2 {
+  font-size: var(--fs-1);
+}
+.h3 {
+  font-size: var(--fs-2);
+}
+.h4 {
+  font-size: var(--fs-4);
+}
+.h5 {
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+}
+
 article {
-  background: var(--bg-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.47);
   border-radius: 10px;
   box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 1;
   padding: 16px;
+  background: rgba(99, 98, 98, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  border: 1px solid rgba(99, 98, 98, 0.62);
 }
 
 .article-title {
@@ -192,6 +237,11 @@ article.active {
     box-shadow: var(--shadow-5);
     min-height: 100%;
   }
+
+  p {
+    font-size: var(--fs-3);
+    font-weight: var(--fw-400);
+  }
 }
 
 @media (min-width: 1250px) {
@@ -200,17 +250,13 @@ article.active {
     justify-content: center;
     align-items: stretch;
     gap: 25px;
+    margin: 0;
+    overflow: hidden;
     /* padding-top: 30px; */
   }
   .main-content {
     min-width: 75%;
     width: 75%;
     margin: 0;
-  }
-  article {
-    width: auto;
-  }
-  article {
-    min-height: 100%;
   }
 }
