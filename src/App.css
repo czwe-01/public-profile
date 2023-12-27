@@ -68,7 +68,7 @@ a {
 #simple-tab-0.Mui-selected,
 #simple-tab-1.Mui-selected,
 #simple-tab-2.Mui-selected {
-  color: var(--highlight-gold);
+  color: var(--vegas-gold);
 }
 
 #simple-tab-0,
@@ -77,8 +77,9 @@ a {
   color: var(--light-gray-70);
 }
 
-.css-1aquho2-MuiTabs-indicator {
-  background-color: var(--orange-yellow-crayola) !important;
+.css-1aquho2-MuiTabs-indicator,
+.css-ttwr4n {
+  background-color: var(--vegas-gold) !important;
 }
 
 img,
