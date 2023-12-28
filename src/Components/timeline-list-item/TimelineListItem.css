@@ -69,7 +69,7 @@ a {
 @media (min-width: 1024px) {
   .timeline-text {
     max-width: 700px;
-    font-size: var(--fs-2);
+    font-size: var(--fs-4);
     font-weight: var(--fw-300);
   }
 }
