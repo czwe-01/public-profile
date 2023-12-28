@@ -206,7 +206,7 @@ article.active {
 
   .main-content {
     position: relative;
-    width: max-content;
+    width: 100%;
     margin: auto;
   }
   article {
@@ -215,7 +215,7 @@ article.active {
   }
 
   p {
-    font-size: var(--fs-3);
+    font-size: var(--fs-4);
     font-weight: var(--fw-400);
   }
 }
@@ -225,13 +225,12 @@ article.active {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 25px;
-    margin: 0;
+    gap: 5px;
     overflow: hidden;
     /* padding-top: 30px; */
   }
   .main-content {
-    min-width: 70%;
+    min-width: 75%;
     width: 75%;
     margin: 0;
   }
