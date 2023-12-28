@@ -8,6 +8,7 @@ import {
 
 import portfolioData from "../../data/portfolioData.json";
 import IconBox from "../IconBox/IconBox";
+import "./Contacts.css";
 
 const icons = [
   <FaEnvelope />,

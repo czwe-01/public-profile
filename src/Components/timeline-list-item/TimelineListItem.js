@@ -1,7 +1,9 @@
-import Separator from "../separator/Separator"
 import React from "react";
 
-function ResumeListItems(props) {
+import Separator from "../separator/Separator";
+import "./TimelineListItem.css";
+
+function TimelineListItem(props) {
   if (props.url !== undefined) {
     return (
       <li className="timeline-item" key={props.index}>
@@ -24,4 +26,4 @@ function ResumeListItems(props) {
     );
 }
 
-export default ResumeListItems;
+export default TimelineListItem;

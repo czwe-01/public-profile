@@ -1,8 +1,10 @@
 import React from "react";
+
 import portfolioData from "../../data/portfolioData.json";
+import "./SidebarHeader.css";
 
 const personalInfo = portfolioData.personalInfo;
-function SideBarHeader() {
+function SidebarHeader() {
   return (
     <div className="sidebar-info">
       <img
@@ -22,4 +24,4 @@ function SideBarHeader() {
   );
 }
 
-export default SideBarHeader;
+export default SidebarHeader;

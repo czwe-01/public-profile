@@ -1,14 +1,15 @@
 import React from "react";
-import "../../styles/Sidebar.css";
-import Contacts from "./Contacts";
-import SideBarHeader from "./SideBarHeader";
+
+import "./Sidebar.css";
+import Contacts from "../contact-info/Contacts";
 import Socials from "../socials/Socials";
 import Separator from "../separator/Separator";
+import SidebarHeader from "../sidebar-header/SidebarHeader";
 
 export default function Sidebar() {
   return (
     <aside className="active sidebar" data-sidebar>
-      <SideBarHeader />
+      <SidebarHeader />
 
       <div className="sidebar-info_more">
         <Separator />

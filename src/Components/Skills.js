@@ -11,6 +11,7 @@ import {
   FaGalacticRepublic,
   FaDocker,
 } from "react-icons/fa";
+
 import Skill from "./skill/Skill";
 
 const skills = [

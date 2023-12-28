@@ -1,7 +1,7 @@
 import { Chip } from "@mui/material";
 import React from "react";
 import { FaLink } from "react-icons/fa";
-import IconBox from "../../IconBox/IconBox";
+import IconBox from "../IconBox/IconBox";
 import "./Project.css";
 
 function Project({ item }) {
@@ -16,7 +16,7 @@ function Project({ item }) {
 
         {item.image ? (
           <img
-            src={require(`../../../images/projects/${item.image}`)}
+            src={require(`../../images/projects/${item.image}`)}
             alt={item.name}
             loading="lazy"
           />

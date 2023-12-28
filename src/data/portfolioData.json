@@ -259,7 +259,7 @@
       "name": "Military game",
       "year": "2023",
       "stack": ["react", "css", "javascript", "tdd", "redux", "redux-sagas"],
-      "url": "#",
+      "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-538-redux-saga-intro-javascript",
       "description": "Millitary game is a game in which the player has to kill all the enemies to accumulate points at each stage, without being killed three times.",
       "id": "538",
       "image": "redux-saga-intro.png"
