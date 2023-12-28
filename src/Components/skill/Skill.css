@@ -1,0 +1,9 @@
+.skill-title {
+  width: max-content;
+  color: var(--light-gray-70);
+}
+
+.MuiPaper-root {
+  background: linear-gradient(#757575, var(--jet)) padding-box !important;
+  border: 1px solid var(--orange-yellow-crayola);
+}

@@ -1,7 +1,9 @@
 import React from "react";
-import TimeLineList from "./TimeLineList";
-import "../styles/TimeLine.css";
-import IconBox from "./IconBox/IconBox";
+import TimeLineList from "../timeline-list/TimeLineList";
+
+import "./TimeLine.css";
+import IconBox from "../IconBox/IconBox";
+
 function TimeLine(props) {
   return (
     <div>

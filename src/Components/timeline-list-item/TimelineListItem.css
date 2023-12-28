@@ -2,22 +2,6 @@ li {
   list-style: none;
 }
 
-.timeline {
-  margin-bottom: 30px;
-}
-
-.timeline .title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 25px;
-}
-
-.timeline-list {
-  font-size: var(--fs-6);
-  margin-left: 3px;
-}
-
 .timeline-item {
   position: relative;
 }
@@ -36,6 +20,7 @@ li {
   font-weight: var(--fw-400);
   line-height: 1.2;
 }
+
 .timeline-item:not(:last-child)::before {
   content: "";
   position: absolute;
@@ -71,9 +56,6 @@ a {
 }
 
 @media (min-width: 580px) {
-  .timeline-list {
-    margin-left: 65px;
-  }
   .timeline-item:not(:last-child)::before {
     left: -40px;
   }

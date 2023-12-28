@@ -1,12 +1,15 @@
 import React from "react";
-import ResumeListItems from "./about/ResumeListItems";
+import TimelineListItem from "../timeline-list-item/TimelineListItem";
+
+import "./TimelineList.css";
+
 function TimeLineList(props) {
   const data = props.data;
   return (
     <ol className="timeline-list">
       {data[props.category].reverse().map((item, index) => {
         return (
-          <ResumeListItems
+          <TimelineListItem
             url={item.url}
             name={item.name}
             year={item.year}

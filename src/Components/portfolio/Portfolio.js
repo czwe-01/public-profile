@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "../../styles/Portfolio.css";
+import "./Portfolio.css";
 import portfolioData from "../../data/portfolioData.json";
-import Projects from "./projects/Projects";
-import FilterList from "./filter-item/FilterList";
-import FilterSelect from "./filter-select/FilterSelect";
+import Projects from "../projects/Projects";
+import FilterList from "../filter-item/FilterList";
+import FilterSelect from "../filter-select/FilterSelect";
 
 const projectData = portfolioData.projects;
 
@@ -25,7 +25,9 @@ export default function Portfolio() {
   return (
     <article className="portfolio active" data-page="portfolio">
       <header>
-        <h2 className="h2 article-title">Portfolio</h2>
+        <h1 className="article-title">
+          <span></span>Portfolio
+        </h1>
       </header>
 
       <section className="projects">

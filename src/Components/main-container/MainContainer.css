@@ -1,0 +1,16 @@
+#simple-tab-0.Mui-selected,
+#simple-tab-1.Mui-selected,
+#simple-tab-2.Mui-selected {
+  color: var(--vegas-gold);
+}
+
+#simple-tab-0,
+#simple-tab-1,
+#simple-tab-2 {
+  color: var(--light-gray-70);
+}
+
+.css-1aquho2-MuiTabs-indicator,
+.css-ttwr4n {
+  background-color: var(--vegas-gold) !important;
+}

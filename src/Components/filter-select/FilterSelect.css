@@ -1,7 +1,3 @@
-/* .filter-list {
-  display: none;
-}
-
 .filter-select-box {
   position: relative;
   margin-bottom: 25px;
@@ -59,4 +55,4 @@
 
 .select-item button:hover {
   --eerie-black-2: hsl(240, 2%, 20%);
-} */
+}

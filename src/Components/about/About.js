@@ -1,8 +1,8 @@
 import React from "react";
-import Skills from "./Skills";
+import Skills from "../Skills";
 import "./About.css";
 import { FaBusinessTime, FaGraduationCap } from "react-icons/fa";
-import TimeLine from "../TimeLine";
+import TimeLine from "../timeline/TimeLine";
 import portfolioData from "../../data/portfolioData.json";
 
 const data = portfolioData.about;

@@ -8,6 +8,11 @@
   transition: var(--transition-1);
 }
 
+.filter-list {
+  display: none;
+  overflow: auto;
+}
+
 @media (min-width: 768px) {
   .filter-select-box {
     display: none;

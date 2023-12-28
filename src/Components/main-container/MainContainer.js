@@ -3,10 +3,12 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
-import About from "./about/About";
-import Portfolio from "./portfolio/Portfolio";
-import Achievements from "./achievements/Achievements";
+import About from "../about/About";
+import Portfolio from "../portfolio/Portfolio";
+import Achievements from "../achievements/Achievements";
 import { FaLongArrowAltUp } from "react-icons/fa";
+
+import "./MainContainer.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

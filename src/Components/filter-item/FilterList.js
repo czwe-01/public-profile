@@ -1,5 +1,5 @@
 import React from "react";
-import portfolioData from "../../../data/portfolioData.json";
+import portfolioData from "../../data/portfolioData.json";
 import "./FilterItem.css";
 const filters = portfolioData.techStacks;
 
