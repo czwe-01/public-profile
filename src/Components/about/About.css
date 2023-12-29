@@ -25,6 +25,15 @@ h1 > span {
   margin-bottom: 15px;
 }
 
+.cv-button {
+  padding: 0.62em;
+  font-size: var(--fs-6);
+  background: linear-gradient(#757575, var(--white-2)) padding-box !important;
+  border: 1.2px solid var(--orange-yellow-crayola);
+  border-radius: 10px;
+  box-shadow: var(--shadow-4);
+}
+
 @media (min-width: 580px) {
   .about {
     margin-bottom: 20px;

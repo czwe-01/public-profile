@@ -1,7 +1,7 @@
 {
   "personalInfo": {
     "name": "Thulasize Nkambule",
-    "field": "Web developer",
+    "field": "Front-end developer",
     "picture": "logo.png"
   },
   "socials": [
@@ -16,7 +16,8 @@
   ],
 
   "about": {
-    "about_me": "I have worked on projects at every stage: from gathering initial requirements to deploying a finished product. My code is efficient and clean. I am skilled at applying OO design principles and ensuring maximum re-usability of components. User-friendly and intuitive user interfaces are a must with any client-facing technology. My skills lie in creating intuitive, bug-free, and modern GUIs. My front-end framework of choice is React for web development and React Native for mobile app development.",
+    "about_me": "Hi, I am Thulasizwe a front-end web and mobile app developer, I have worked on projects at every stage: from gathering initial requirements to deploying a finished product. My code is efficient, clean and tested. I am skilled at applying OO design principles and ensuring maximum re-usability of components. User-friendly and intuitive user interfaces are a must with any client-facing technology. My skills lie in creating intuitive, bug-free, and modern GUIs. My front-end framework of choice is React for web development and React Native for mobile app development.",
+    "cv": "https://docs.google.com/document/d/1XHGGAVwYCpPPgq8yzUa3XbBTDzyfK2laU6ZJuhz46Xc/edit?usp=sharing",
     "education": [
       {
         "name": "umuzi.org",
@@ -279,7 +280,7 @@
       "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-794-contentitem-javascript-react",
       "description": "This an app that utilizes the phones camera to scan qr predefined codes and save the valid information to the phones database. You can add a note, favourite and delete a contact from the database",
       "id": "794",
-      "image": "qr-conference-connector.jpg"
+      "image": "qr-conference-connector.png"
     },
     {
       "name": "Simple variometer",

@@ -12,8 +12,8 @@
   --eerie-black-2: hsl(240, 2%, 12%);
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --white-2: rgb(250, 250, 250);
+  --orange-yellow-crayola: rgb(255, 219, 112);
   --vegas-gold: #ceb15a;
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
@@ -31,9 +31,10 @@
   --fw-500: 500;
   --fw-600: 600;
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+  --shadow-2: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
-  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+  --shadow-4: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
@@ -195,7 +196,8 @@ article.active {
 @media (min-width: 1024px) {
   :root {
     --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
-    --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
+    --shadow-2: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
   }
 
