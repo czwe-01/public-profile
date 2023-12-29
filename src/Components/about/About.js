@@ -18,6 +18,12 @@ export default function About() {
 
       <section className="about-text">
         <p>{data.about_me}</p>
+        <button
+          className="cv-button"
+          onClick={() => window.open(data.cv, "_blank")}
+        >
+          see my resume
+        </button>
       </section>
 
       <header>
