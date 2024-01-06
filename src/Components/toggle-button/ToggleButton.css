@@ -1,0 +1,30 @@
+.toggleContainer {
+  position: absolute;
+  align-self: baseline;
+  right: 1em;
+}
+
+/* @media (min-width: 768px) {
+  .toggleContainer {
+    left: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  aside .toggleContainer {
+    display: none;
+  }
+
+  .toggleContainer {
+    top: 2em;
+    left: 80em;
+  }
+} */
+
+/* @media (min-width: 1250px) {
+  .toggleContainer {
+    position: fixed;
+    top: 2em;
+    right: 12em;
+  }
+} */

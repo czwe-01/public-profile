@@ -29,7 +29,7 @@
 }
 
 .project-title {
-  font-size: var(--fs-2);
+  font-size: var(--fs-5);
   font-weight: var(--fw-500);
   text-transform: capitalize;
   margin-left: 1em;
@@ -37,7 +37,7 @@
   line-height: 1.3;
   text-align: start;
   width: 100%;
-  color: var(--onyx);
+  color: var(--title-color);
 }
 
 .project-img::before {
@@ -130,14 +130,15 @@
     height: auto;
   }
 }
+
 @media (min-width: 580px) {
   .project-title {
-    font-size: var(--fs-4);
+    font-size: var(--fs-5);
   }
 }
 
 @media (min-width: 1024) {
   .project-title {
-    font-size: var(--fs-4);
+    font-size: var(--fs-3);
   }
 }

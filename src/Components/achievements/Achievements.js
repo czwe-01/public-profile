@@ -5,10 +5,13 @@ import projectData from "../../data/portfolioData.json";
 
 const data = projectData.achievements;
 
-export default function Achievements() {
+export default function Achievements({active}) {
   return (
     <>
-      <article className="resume active" data-page="resume">
+      <article
+        className={active ? "resume active" : "resume"}
+        data-page="resume"
+      >
         <header>
           <h1 className="article-title">
             <span></span>My achievements

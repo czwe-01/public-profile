@@ -48,7 +48,10 @@ export default function MainContainer() {
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    console.log(value);
   };
+
+  const isActive = (i) => value === i;
 
   const goToTop = () => window.scrollTo(0, 0);
 
@@ -85,13 +88,13 @@ export default function MainContainer() {
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
-          <About />
+          <About active={isActive(0)} />
         </TabPanel>
         <TabPanel value={value} index={1}>
-          <Portfolio />
+          <Portfolio active={isActive(1)} />
         </TabPanel>
         <TabPanel value={value} index={2}>
-          <Achievements />
+          <Achievements active={isActive(2)} />
         </TabPanel>
       </Box>
     </div>
