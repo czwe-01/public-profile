@@ -2,6 +2,7 @@
   position: absolute;
   align-self: baseline;
   right: 1em;
+  transform: scale(0.8);
 }
 
 /* @media (min-width: 768px) {
