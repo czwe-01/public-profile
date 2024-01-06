@@ -7,7 +7,7 @@ import FilterSelect from "../filter-select/FilterSelect";
 
 const projectData = portfolioData.projects;
 
-export default function Portfolio() {
+export default function Portfolio({ active }) {
   const projects = projectData.slice().reverse();
   const [filter, setFilter] = useState("all");
   const [data, setData] = useState(projects);
@@ -23,7 +23,10 @@ export default function Portfolio() {
   }, [filter, projects]);
 
   return (
-    <article className="portfolio active" data-page="portfolio">
+    <article
+      className={active ? "portfolio active" : "portfolio"}
+      data-page="portfolio"
+    >
       <header>
         <h1 className="article-title">
           <span></span>Portfolio

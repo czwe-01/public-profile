@@ -15,6 +15,7 @@ function TimeLineList(props) {
             year={item.year}
             comment={item.comment}
             index={index}
+            key={item.name + index}
           />
         );
       })}

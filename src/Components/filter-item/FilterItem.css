@@ -28,11 +28,11 @@
 }
 
 .filter-item button:hover {
-  color: var(--jet);
-  background-color: var(--light-gray-70);
+  color: var(--vegas-gold);
+  background-color: var(--title-color);
 }
 
 .filter-item.active button {
-  color: var(--jet);
-  background-color: var(--light-gray-70);
+  color: var(--vegas-gold);
+  background-color: var(--title-color);
 }

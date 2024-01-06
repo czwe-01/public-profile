@@ -35,7 +35,7 @@ export default function Skills() {
         columns={{ xs: 4, sm: 8, md: 12 }}
       >
         {skills.map((_, index) => (
-          <Skill skill={_} index={index} />
+          <Skill skill={_} index={index} key={_.name + index} />
         ))}
       </Grid>
     </Box>

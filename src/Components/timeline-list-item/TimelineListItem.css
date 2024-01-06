@@ -38,19 +38,19 @@ li {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--light-gray-70);
+  background: var(--title-color);
   border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--jet);
+  box-shadow: 0 0 0 4px var(--background);
 }
 
 a {
   .timeline-text {
-    color: var(--bg-primary);
+    color: var(--dark-background);
   }
 }
 
 .timeline-text {
-  color: var(--light-gray-70);
+  color: var(--light-gray-1);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }

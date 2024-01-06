@@ -26,7 +26,7 @@ function Contacts() {
     <ul className="contacts-list">
       {contactInfo.map((detail, index) => {
         return (
-          <li className="contact-item">
+          <li className="contact-item" key={detail.value + index}>
             <IconBox icon={detail.icon} />
             {detail.href ? (
               <a href={detail.href} key={index}>
