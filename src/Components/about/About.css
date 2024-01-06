@@ -5,7 +5,7 @@
 h1 {
   display: flex;
   flex-direction: row;
-  color: var(--light-gray-70);
+  color: var(--title-color);
 }
 
 h1 > span {
@@ -32,6 +32,7 @@ h1 > span {
   border: 1.2px solid var(--orange-yellow-crayola);
   border-radius: 10px;
   box-shadow: var(--shadow-4);
+  color: var(--background);
 }
 
 @media (min-width: 580px) {

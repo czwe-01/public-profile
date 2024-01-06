@@ -9,12 +9,14 @@
 
 .sidebar.active {
   max-height: 700px;
-  background: rgba(99, 98, 98, 0.26);
+  background: linear-gradient(#757575, var(--background)) padding-box !important;
+
+  /* background: rgba(99, 98, 98, 0.26); */
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.1px);
   -webkit-backdrop-filter: blur(5.1px);
-  border: 1px solid rgba(99, 98, 98, 0.62);
+  border: 1px solid var(--article-border);
 }
 
 .socials {
@@ -28,6 +30,7 @@
   max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
+  z-index: 100;
 }
 .sidebar-info {
   position: relative;

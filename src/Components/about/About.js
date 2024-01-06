@@ -7,9 +7,9 @@ import portfolioData from "../../data/portfolioData.json";
 
 const data = portfolioData.about;
 
-export default function About() {
+export default function About({ active }) {
   return (
-    <article className="about active" data-page="about">
+    <article className={active ? "about active" : "about"} data-page="about">
       <header>
         <h1 className="article-title">
           <span></span>About me
