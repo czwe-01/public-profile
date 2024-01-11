@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Portfolio.css";
 import Projects from "../projects/Projects";
 import FilterList from "../filter-item/FilterList";
