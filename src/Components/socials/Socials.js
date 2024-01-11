@@ -7,12 +7,10 @@ import {
   FaHackerrank,
   FaQuestion,
 } from "react-icons/fa";
-import portfolioData from "../../data/portfolioData.json";
+
 import IconBox from "../IconBox/IconBox";
 
-function Socials() {
-  const { socials } = portfolioData;
-
+function Socials({ socials }) {
   return (
     <div className="socials">
       {socials.map((social, index) => {

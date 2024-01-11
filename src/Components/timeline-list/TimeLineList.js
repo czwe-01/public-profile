@@ -7,7 +7,7 @@ function TimeLineList(props) {
   const data = props.data;
   return (
     <ol className="timeline-list">
-      {data[props.category].reverse().map((item, index) => {
+      {[...data[props.category]].reverse().map((item, index) => {
         return (
           <TimelineListItem
             url={item.url}

@@ -1,35 +1,47 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import Sidebar from "./Components/sidebar/Sidebar";
 import MainContainer from "./Components/main-container/MainContainer";
-import Particle from "./Components/particle/Particle";
+import { resetProject, setProject, toggleMode } from "./redux/appSlice";
+import { bindActionCreators } from "@reduxjs/toolkit";
+import { connect, useSelector } from "react-redux";
 
-function App() {
-  const [mode, setMode] = useState(null);
-
-  function toggle() {
-    if (mode !== "dark") {
-      setMode("dark");
-      document.querySelector("body").setAttribute("data-theme", "dark");
-    } else {
-      setMode("light");
-      document.querySelector("body").setAttribute("data-theme", "light");
-    }
-  }
+function App({ toggleMode, setProject, resetProject }) {
+  const data = useSelector((state) => state.appSlice.data);
+  const darkMode = useSelector((state) => state.appSlice.darkMode);
 
   useEffect(() => {
-    if (mode === null) {
+    if (!darkMode) {
       document.querySelector("body").setAttribute("data-theme", "light");
-    }
-  }, [mode]);
+    } else document.querySelector("body").setAttribute("data-theme", "dark");
+  }, [darkMode]);
 
   return (
     <div className="main">
-      <Sidebar toggle={toggle} />
-      <MainContainer />
-      <Particle left={10} top={700} height={"10px"} width={"2px"} />
+      <Sidebar toggle={toggleMode} data={data} />
+      <MainContainer
+        data={data}
+        setProject={setProject}
+        resetProject={setProject}
+      />
     </div>
   );
 }
 
-export default App;
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(
+    {
+      toggleMode,
+      setProject,
+      resetProject,
+    },
+    dispatch
+  );
+}
+function mapStateToProps(state) {
+  return {
+    store: state,
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

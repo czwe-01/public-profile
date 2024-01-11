@@ -127,36 +127,12 @@
   "techStacks": ["all", "html", "css", "javascript", "nodejs", "sql", "redux"],
   "projects": [
     {
-      "name": "My Tribute Page",
-      "year": "2020",
-      "stack": ["html", "css"],
-      "url": "https://codepen.io/czwe_01/pen/xBQqrj",
-      "description": "This project is a freeCodeCamp project for Responsive Web design certification. It is a tribute of James Ingrams",
-      "image": "tributePage.png"
-    },
-    {
-      "name": "Build A Survey Form",
-      "year": "2020",
-      "stack": ["html", "css"],
-      "url": "https://codepen.io/czwe_01/pen/GewrKO",
-      "description": "This project is a freeCodeCamp project for Responsive Web design certification. It is a survey form",
-      "image": "surveyForm.png"
-    },
-    {
-      "name": "Technical Documentation",
-      "year": "2020",
-      "stack": ["html", "css"],
-      "url": "https://codepen.io/czwe_01/pen/WmKYqR",
-      "description": "This project is a freeCodeCamp project for Responsive Web design certification. It is a technical documentation website",
-      "image": "technicalDoc.png"
-    },
-    {
       "name": "Ladies In Hygiene",
       "year": "2020",
       "stack": ["html", "css", "javascript"],
       "url": "https://ladiesinhygiene.netlify.app/",
       "description": "I was involved in building a website for a fumigation and hygiene startup business. I was responsible for the front-end development and design.",
-      "image": "ladiesInHygiene.png"
+      "image": "ladies-in-hygien.png"
     },
     {
       "name": "Personal website",
@@ -166,60 +142,7 @@
       "description": "This is the website you are currently on, my personal portfolio",
       "image": "personal-website.png"
     },
-    {
-      "name": "Morse code",
-      "year": "2022",
-      "stack": ["assertions", "javascript"],
-      "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-184-assertive-programming-kata-javascript",
-      "description": "This is program that has two functions, it  can convert morse code to numbers, letters of the alphabets and special characters, and it can convert numbers, special characters and letters of the alphabets to morse code ",
-      "image": "",
-      "id": "184"
-    },
-    {
-      "name": "Consume Github API",
-      "year": "2021",
-      "stack": ["javascript", "API"],
-      "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-186-consume-github-api-javascript",
-      "description": "The function outputs a list or array of pull requests on the repo such that the PRs were created, updated, merged or closed between the given two dates. For each PR include the id, user (who opened the PR), title, state, and when it was created. While for private repos a token will be required, the function should be able to work on public repos (eg. ACN-syllabus) without needing a token.",
-      "image": "",
-      "id": "186"
-    },
-    {
-      "name": "Semitone difference",
-      "year": "2022",
-      "stack": ["html", "css", "javascript", "tdd"],
-      "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-199-semitone-difference-basic-algorithm-javascript",
-      "description": "This program lets a user get two random notes from the note circle and input the distance betweeen the notes. It tells you when you are correct and when you are incorrect and also allows you to reveal the answer.",
-      "image": "semitone.png",
-      "id": "199"
-    },
-    {
-      "name": "Shop Database using sql",
-      "year": "5/26/2022, 6:05:30 PM",
-      "stack": ["sql", "docker", "javascript", "nodejs"],
-      "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-200-sql-",
-      "description": "This program is written to create a database called 'shop' with 5 tables (customer, employees, orders, payments and products) from which the following is queried -SELECT ALL records from table Customers SELECT records only from the name column in the Customers table, Show the name of the Customer whose CustomerID is 1, UPDATE the record for CustomerID = 1 on the Customer table so that the name is “Lerato Mabitso”, DELETE the record from the Customers table for customer 2 (CustomerID = 2), Select all unique statuses from the Orders table and get a count of the number of orders for each unique status, Return the MAXIMUM payment made on the PAYMENTS table, Select all customers from the “Customers” table, sorted by the “Country” column, Select all products with a price BETWEEN R100 and R600, Select all fields from “Customers” where the country is “Germany” AND the city is “Berlin”, Select all fields from “Customers” where the city is “Cape Town” OR “Durban”, Select all records from Products where the Price is GREATER than R500, Return the sum of the Amounts on the Payments table, Count the number of shipped orders in the Orders table, Return the average price of all Products, in Rands and Dollars (assume the exchange rate is R12 to the Dollar), Using INNER JOIN create a query that selects all Payments with Customer information, Select all products that have turnable front wheels.",
-      "image": "",
-      "id": "200"
-    },
-    {
-      "name": "Memory Game",
-      "year": "2022",
-      "stack": ["html", "css", "javascript", "tdd"],
-      "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-222-memory-game-in-vanilla-js-javascript",
-      "description": "This a memory game app in which a user tries to match images that look the same. The game has 3 features, a timer that telss you how long you took to match all cards, a configurable grid size that allows you to choose from different sizes and a filp counter that tells you how many times you flipped the cards to match them all",
-      "image": "memory-game.png",
-      "id": "222"
-    },
-    {
-      "name": "Email Random Inspirational Quote",
-      "year": "2022",
-      "stack": ["nodejs", "javascript", "tdd", "node"],
-      "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-230-email-random-inspirational-quote-javascript",
-      "description": "This program sends a random inspirational quote to the email that is parsed to it",
-      "image": "",
-      "id": "230"
-    },
+
     {
       "name": "Node File IO",
       "year": "2022",

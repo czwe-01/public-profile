@@ -1,15 +1,12 @@
 import React from "react";
 
-import portfolioData from "../../data/portfolioData.json";
 import "./FilterSelect.css";
-
-const filters = portfolioData.techStacks;
 
 function FilterSelect(props) {
   return (
     <div className="filter-select-box">
       <select className="filter-select" onChange={props.handleChange}>
-        {filters.map((item) => {
+        {props.filters.map((item) => {
           return (
             <option key={item} value={item}>
               {item}

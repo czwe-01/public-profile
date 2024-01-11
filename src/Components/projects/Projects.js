@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Project from "../project/Project";
 
 import "./Projects.css";
-function Projects({ data }) {
+import { useSelector } from "react-redux";
+
+function Projects() {
+  const data = useSelector((state) => state.appSlice.data.projects);
+
   return (
     <div className="project-list">
       {data.map((item, index) => {

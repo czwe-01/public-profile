@@ -1,12 +1,11 @@
 import React from "react";
-import portfolioData from "../../data/portfolioData.json";
+
 import "./FilterItem.css";
-const filters = portfolioData.techStacks;
 
 function FilterList(props) {
   return (
     <ul className="filter-list">
-      {filters.map((item, index) => {
+      {props.filters.map((item, index) => {
         const active = props.filter === item;
 
         return (

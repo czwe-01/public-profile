@@ -1,12 +1,20 @@
-import { Chip } from "@mui/material";
-import React from "react";
+import { Button, Chip } from "@mui/material";
+import React, { useState } from "react";
 import { FaLink } from "react-icons/fa";
 import IconBox from "../IconBox/IconBox";
 import "./Project.css";
+import ProjectModal from "../project-modal/ProjectModal";
 
 function Project({ item }) {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
   return (
     <div className="project-item  active">
+      <ProjectModal project={item} open={open} setOpen={setOpen} />
+
       <figure className="project-img">
         <div className="project-item-icon-box">
           <a href={item.url} target="_blank" rel="noreferrer">
@@ -23,14 +31,12 @@ function Project({ item }) {
         ) : (
           <div className="description">{item.description}</div>
         )}
-        <div className="stacks">
-          {item.stack.map(function (stack) {
-            return <Chip label={stack} key={stack} />;
-          })}
-        </div>
       </figure>
 
       <h2 className="project-title">{item.name}</h2>
+      <button className="cv-button" onClick={() => handleOpen()}>
+        see more
+      </button>
     </div>
   );
 }

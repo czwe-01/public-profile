@@ -1,0 +1,59 @@
+.css-1koafzd {
+  width: 90% !important;
+}
+.css-1kq1cvh {
+  width: 90% !important;
+  background: linear-gradient(#757575, var(--background), #757575) padding-box !important;
+}
+
+.content-container {
+  display: grid !important;
+  margin-bottom: 1em;
+}
+
+.img-container {
+  width: 100%;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+}
+.modal-img {
+  width: 100%;
+}
+
+.button-container {
+  width: "100%";
+  justify-content: right;
+}
+.closeButton {
+  float: left;
+}
+
+.stack {
+  opacity: 1;
+  color: var(--jet);
+  position: absolute;
+  width: 90%;
+  padding-bottom: 2em;
+  div {
+    margin-top: 0.8em;
+  }
+
+  div {
+    padding: 0.6em;
+    color: var(--jet);
+    background-color: var(--orange-yellow-crayola);
+  }
+}
+
+@media (min-width: 768px) {
+  .content-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+  .img-container {
+    position: relative;
+  }
+}
