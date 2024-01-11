@@ -43,12 +43,11 @@ function a11yProps(index) {
   };
 }
 
-export default function MainContainer() {
+export default function MainContainer({ data, setProject, resetProject }) {
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (event, newValue) => {
+  const handleChange = (_, newValue) => {
     setValue(newValue);
-    console.log(value);
   };
 
   const isActive = (i) => value === i;
@@ -88,13 +87,13 @@ export default function MainContainer() {
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
-          <About active={isActive(0)} />
+          <About active={isActive(0)} data={data.about} />
         </TabPanel>
         <TabPanel value={value} index={1}>
           <Portfolio active={isActive(1)} />
         </TabPanel>
         <TabPanel value={value} index={2}>
-          <Achievements active={isActive(2)} />
+          <Achievements active={isActive(2)} data={data.achievements} />
         </TabPanel>
       </Box>
     </div>

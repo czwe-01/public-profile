@@ -1,0 +1,97 @@
+.project-modal-container {
+  overflow: hidden;
+}
+.css-1koafzd {
+  width: 90% !important;
+}
+.css-1kq1cvh {
+  width: 90% !important;
+  background: linear-gradient(#757575, var(--background), #757575) padding-box !important;
+}
+
+.css-1kq1cvh::-webkit-scrollbar {
+  width: 12px;
+  height: calc(100% - 1em);
+}
+.css-1kq1cvh::-webkit-scrollbar-track {
+  background: var(--eerie-black-1);
+}
+.css-1kq1cvh::-webkit-scrollbar-thumb {
+  background: var(--eerie-black-2);
+  border-radius: 20px;
+  border: 1px solid var(--vegas-gold);
+}
+.content-container {
+  display: grid !important;
+  margin-bottom: 1em;
+}
+
+.img-container {
+  width: 100%;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+}
+.modal-img {
+  width: 100%;
+}
+
+.modal-img.preview-img {
+  position: relative;
+  animation: pan 20s ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.button-container {
+  width: "100%";
+  justify-content: right;
+}
+.closeButton {
+  float: left;
+}
+
+.stack {
+  opacity: 1;
+  color: var(--jet);
+  position: absolute;
+  width: 90%;
+  padding-bottom: 2em;
+  div {
+    margin-top: 0.8em;
+  }
+
+  div {
+    padding: 0.6em;
+    color: var(--jet);
+    background-color: var(--orange-yellow-crayola);
+  }
+}
+
+@keyframes pan {
+  0% {
+    background-position: 36% 42%;
+    background-size: 200%;
+  }
+
+  50% {
+    background-position: 49% 81%;
+    background-size: 300%;
+  }
+
+  100% {
+    background-position: 36% 42%;
+    background-size: 200%;
+  }
+}
+
+@media (min-width: 768px) {
+  .content-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+  .img-container {
+    position: relative;
+  }
+}

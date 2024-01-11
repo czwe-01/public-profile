@@ -10,8 +10,6 @@
 .sidebar.active {
   max-height: 700px;
   background: linear-gradient(#757575, var(--background)) padding-box !important;
-
-  /* background: rgba(99, 98, 98, 0.26); */
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.1px);

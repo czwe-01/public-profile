@@ -56,6 +56,7 @@ body[data-theme="dark"] {
   --white-2: #a7a6a6;
   --title-color: #7e7e7e;
   --light-gray: #aaaaaa;
+
   background: linear-gradient(
       to bottom,
       var(--dark-background),
@@ -71,6 +72,18 @@ body[data-theme="dark"] {
   background-size: cover, var(--pattern-size) var(--pattern-size),
     var(--pattern-size) var(--pattern-size), cover;
   background-position: top center;
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: var(--eerie-black-1); /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--eerie-black-2);
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 1px solid var(--vegas-gold); /* creates padding around scroll thumb */
 }
 
 body[data-theme="light"] {
@@ -90,6 +103,9 @@ body[data-theme="light"] {
   background-size: cover, var(--pattern-size) var(--pattern-size),
     var(--pattern-size) var(--pattern-size), cover;
   background-position: top center;
+  -webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+  }
 }
 
 a {

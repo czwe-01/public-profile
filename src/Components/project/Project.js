@@ -1,36 +1,36 @@
-import { Chip } from "@mui/material";
-import React from "react";
-import { FaLink } from "react-icons/fa";
-import IconBox from "../IconBox/IconBox";
+import React, { useState } from "react";
+import { FaExpand } from "react-icons/fa";
 import "./Project.css";
+import ProjectModal from "../project-modal/ProjectModal";
+import IconButton from "../icon-button/IconButton";
 
-function Project({ item }) {
+function Project({ project }) {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
   return (
     <div className="project-item  active">
+      <ProjectModal project={project} open={open} setOpen={setOpen} />
+
       <figure className="project-img">
         <div className="project-item-icon-box">
-          <a href={item.url} target="_blank" rel="noreferrer">
-            <IconBox icon={<FaLink />} />
-          </a>
+          <IconButton handleClick={handleOpen} icon={<FaExpand />} />
         </div>
 
-        {item.image ? (
+        {project.image ? (
           <img
-            src={require(`../../images/projects/${item.image}`)}
-            alt={item.name}
+            src={require(`../../images/projects/${project.image}`)}
+            alt={project.name}
             loading="lazy"
           />
         ) : (
-          <div className="description">{item.description}</div>
+          <div className="description">{project.description}</div>
         )}
-        <div className="stacks">
-          {item.stack.map(function (stack) {
-            return <Chip label={stack} key={stack} />;
-          })}
-        </div>
       </figure>
 
-      <h2 className="project-title">{item.name}</h2>
+      <h2 className="project-title">{project.name}</h2>
     </div>
   );
 }

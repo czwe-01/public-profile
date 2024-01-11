@@ -6,16 +6,16 @@ import Socials from "../socials/Socials";
 import Separator from "../separator/Separator";
 import SidebarHeader from "../sidebar-header/SidebarHeader";
 
-export default function Sidebar({ toggle }) {
+export default function Sidebar({ toggle, data }) {
   return (
     <aside className="active sidebar" data-sidebar>
-      <SidebarHeader toggle={toggle} />
+      <SidebarHeader toggle={toggle} personalInfo={data.personalInfo} />
 
       <div className="sidebar-info_more">
         <Separator />
-        <Contacts />
+        <Contacts contacts={data.contactInfo} />
         <Separator />
-        <Socials />
+        <Socials socials={data.socials} />
       </div>
     </aside>
   );

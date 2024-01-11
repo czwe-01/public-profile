@@ -3,11 +3,8 @@ import Skills from "../Skills";
 import "./About.css";
 import { FaBusinessTime, FaGraduationCap } from "react-icons/fa";
 import TimeLine from "../timeline/TimeLine";
-import portfolioData from "../../data/portfolioData.json";
 
-const data = portfolioData.about;
-
-export default function About({ active }) {
+export default function About({ active, data }) {
   return (
     <article className={active ? "about active" : "about"} data-page="about">
       <header>

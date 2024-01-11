@@ -1,11 +1,8 @@
 import React from "react";
 import TimeLine from "../timeline/TimeLine";
 import { FaCertificate, FaAward } from "react-icons/fa";
-import projectData from "../../data/portfolioData.json";
 
-const data = projectData.achievements;
-
-export default function Achievements({active}) {
+export default function Achievements({ active, data }) {
   return (
     <>
       <article

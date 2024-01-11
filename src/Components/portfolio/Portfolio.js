@@ -1,26 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./Portfolio.css";
-import portfolioData from "../../data/portfolioData.json";
 import Projects from "../projects/Projects";
 import FilterList from "../filter-item/FilterList";
 import FilterSelect from "../filter-select/FilterSelect";
+import { useSelector } from "react-redux";
 
-const projectData = portfolioData.projects;
-
-export default function Portfolio({ active }) {
-  const projects = projectData.slice().reverse();
+function Portfolio({ active }) {
+  const filters = useSelector((state) => state.appSlice.data.techStacks);
   const [filter, setFilter] = useState("all");
-  const [data, setData] = useState(projects);
-
-  const handleChange = (event) => {
-    setFilter(event.target.value.toLowerCase());
-  };
-
-  useEffect(() => {
-    if (filter === "all") {
-      setData(projects);
-    } else setData(projects.filter((item) => item.stack.includes(filter)));
-  }, [filter, projects]);
 
   return (
     <article
@@ -35,11 +22,21 @@ export default function Portfolio({ active }) {
 
       <section className="projects">
         <div>
-          <FilterList handleChange={handleChange} filter={filter} />
-          <FilterSelect handleChange={handleChange} filter={filter} />
+          <FilterList
+            handleChange={setFilter}
+            filter={filter}
+            filters={filters}
+          />
+          <FilterSelect
+            handleChange={setFilter}
+            filter={filter}
+            filters={filters}
+          />
         </div>
-        <Projects data={data} />
+        <Projects filter={filter} />
       </section>
     </article>
   );
 }
+
+export default Portfolio;

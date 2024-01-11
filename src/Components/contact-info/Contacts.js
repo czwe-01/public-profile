@@ -6,7 +6,6 @@ import {
   FaMapMarkedAlt,
 } from "react-icons/fa";
 
-import portfolioData from "../../data/portfolioData.json";
 import IconBox from "../IconBox/IconBox";
 import "./Contacts.css";
 
@@ -17,11 +16,11 @@ const icons = [
   <FaMapMarkedAlt />,
 ];
 
-const contactInfo = portfolioData.contactInfo.map((contact, i) => {
-  return { ...contact, icon: icons[i] };
-});
+function Contacts({ contacts }) {
+  const contactInfo = contacts.map((contact, i) => {
+    return { ...contact, icon: icons[i] };
+  });
 
-function Contacts() {
   return (
     <ul className="contacts-list">
       {contactInfo.map((detail, index) => {

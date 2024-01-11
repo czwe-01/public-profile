@@ -1,11 +1,8 @@
 import React from "react";
-
-import portfolioData from "../../data/portfolioData.json";
 import "./SidebarHeader.css";
 import ToggleButton from "../toggle-button/ToggleButton";
 
-const personalInfo = portfolioData.personalInfo;
-function SidebarHeader({ toggle }) {
+function SidebarHeader({ toggle, personalInfo }) {
   return (
     <div className="sidebar-info">
       <img

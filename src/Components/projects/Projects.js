@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Project from "../project/Project";
 
 import "./Projects.css";
-function Projects({ data }) {
+import { useSelector } from "react-redux";
+
+function Projects({ filter }) {
+  const projects = useSelector((state) => state.appSlice.data.projects);
+  const [data, setData] = useState(projects);
+
+  useEffect(() => {
+    if (filter === "all") {
+      setData(projects);
+    } else
+      setData(projects.filter((project) => project.stack.includes(filter)));
+  }, [filter]);
+
   return (
     <div className="project-list">
-      {data.map((item, index) => {
-        return <Project item={item} key={index} />;
+      {data.map((project, index) => {
+        return <Project project={project} key={index} />;
       })}
     </div>
   );
