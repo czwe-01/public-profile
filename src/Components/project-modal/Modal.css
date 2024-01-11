@@ -1,3 +1,6 @@
+.project-modal-container {
+  overflow: hidden;
+}
 .css-1koafzd {
   width: 90% !important;
 }
@@ -6,6 +9,18 @@
   background: linear-gradient(#757575, var(--background), #757575) padding-box !important;
 }
 
+.css-1kq1cvh::-webkit-scrollbar {
+  width: 12px;
+  height: calc(100% - 1em);
+}
+.css-1kq1cvh::-webkit-scrollbar-track {
+  background: var(--eerie-black-1);
+}
+.css-1kq1cvh::-webkit-scrollbar-thumb {
+  background: var(--eerie-black-2);
+  border-radius: 20px;
+  border: 1px solid var(--vegas-gold);
+}
 .content-container {
   display: grid !important;
   margin-bottom: 1em;
@@ -23,6 +38,12 @@
   width: 100%;
 }
 
+.modal-img.preview-img {
+  position: relative;
+  animation: pan 20s ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 .button-container {
   width: "100%";
   justify-content: right;
@@ -45,6 +66,23 @@
     padding: 0.6em;
     color: var(--jet);
     background-color: var(--orange-yellow-crayola);
+  }
+}
+
+@keyframes pan {
+  0% {
+    background-position: 36% 42%;
+    background-size: 200%;
+  }
+
+  50% {
+    background-position: 49% 81%;
+    background-size: 300%;
+  }
+
+  100% {
+    background-position: 36% 42%;
+    background-size: 200%;
   }
 }
 

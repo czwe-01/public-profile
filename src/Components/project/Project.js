@@ -1,11 +1,10 @@
-import { Button, Chip } from "@mui/material";
 import React, { useState } from "react";
-import { FaLink } from "react-icons/fa";
-import IconBox from "../IconBox/IconBox";
+import { FaExpand } from "react-icons/fa";
 import "./Project.css";
 import ProjectModal from "../project-modal/ProjectModal";
+import IconButton from "../icon-button/IconButton";
 
-function Project({ item }) {
+function Project({ project }) {
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -13,30 +12,25 @@ function Project({ item }) {
 
   return (
     <div className="project-item  active">
-      <ProjectModal project={item} open={open} setOpen={setOpen} />
+      <ProjectModal project={project} open={open} setOpen={setOpen} />
 
       <figure className="project-img">
         <div className="project-item-icon-box">
-          <a href={item.url} target="_blank" rel="noreferrer">
-            <IconBox icon={<FaLink />} />
-          </a>
+          <IconButton handleClick={handleOpen} icon={<FaExpand />} />
         </div>
 
-        {item.image ? (
+        {project.image ? (
           <img
-            src={require(`../../images/projects/${item.image}`)}
-            alt={item.name}
+            src={require(`../../images/projects/${project.image}`)}
+            alt={project.name}
             loading="lazy"
           />
         ) : (
-          <div className="description">{item.description}</div>
+          <div className="description">{project.description}</div>
         )}
       </figure>
 
-      <h2 className="project-title">{item.name}</h2>
-      <button className="cv-button" onClick={() => handleOpen()}>
-        see more
-      </button>
+      <h2 className="project-title">{project.name}</h2>
     </div>
   );
 }

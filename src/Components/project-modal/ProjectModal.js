@@ -1,12 +1,8 @@
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 
 import "./Modal.css";
-import { useSelector } from "react-redux";
 import { Chip } from "@mui/material";
-import { useEffect } from "react";
 import IconBox from "../IconBox/IconBox";
 import { FaTimes } from "react-icons/fa";
 
@@ -30,6 +26,8 @@ export default function ProjectModal({ setOpen, open, project }) {
     setOpen(false);
     console.log(project);
   };
+
+  console.log(project);
 
   return (
     <div className="project-modal-container">
@@ -67,9 +65,14 @@ export default function ProjectModal({ setOpen, open, project }) {
               <h3>Description</h3>
               {project.description}
             </div>
-            <div className="content">
-              <h3>Description</h3>
-              {project.description}
+
+            <div className="img-container">
+              <img
+                src={require(`../../images/projects/${project.previewImage}`)}
+                alt={project.name}
+                loading="lazy"
+                className="modal-img preview-img"
+              />
             </div>
             <div className="content">
               <h3>Description</h3>

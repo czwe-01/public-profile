@@ -5,7 +5,7 @@ import "./FilterSelect.css";
 function FilterSelect(props) {
   return (
     <div className="filter-select-box">
-      <select className="filter-select" onChange={props.handleChange}>
+      <select className="filter-select" onChange={(e)=> props.handleChange(e.target.value)}>
         {props.filters.map((item) => {
           return (
             <option key={item} value={item}>
