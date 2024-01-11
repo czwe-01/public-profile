@@ -4,14 +4,14 @@ import Modal from "@mui/material/Modal";
 import "./Modal.css";
 import { Chip } from "@mui/material";
 import IconBox from "../IconBox/IconBox";
-import { FaTimes } from "react-icons/fa";
+import { FaCompass, FaTimes } from "react-icons/fa";
 
 const style = {
   position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "90%",
+  width: "80%",
   bgcolor: "background.paper",
   borderRadius: "1em",
   boxShadow: 24,
@@ -66,18 +66,15 @@ export default function ProjectModal({ setOpen, open, project }) {
               {project.description}
             </div>
 
-            <div className="img-container">
-              <img
-                src={require(`../../images/projects/${project.previewImage}`)}
-                alt={project.name}
-                loading="lazy"
-                className="modal-img preview-img"
-              />
-            </div>
-            <div className="content">
-              <h3>Description</h3>
-              {project.description}
-            </div>
+            {project.previewImage && (
+              <div
+                className="preview-img"
+                style={{
+                  backgroundImage: `url(${require(`../../images/projects/${project.previewImage}`)})`,
+                }}
+              ></div>
+            )}
+
             <div className="content">
               <h3>Languages and Technologies used</h3>
               <div className="stack">
@@ -85,6 +82,18 @@ export default function ProjectModal({ setOpen, open, project }) {
                   return <Chip label={stack} key={stack + i} />;
                 })}
               </div>
+            </div>
+            <div className="content">
+              <a
+                href={`${project.url}`}
+                target="_blank"
+                rel="noreferrer"
+                className="link-button cv-button"
+              >
+                <div style={{ width: "max-content", margin: "auto" }}>
+                  <FaCompass />
+                </div>
+              </a>
             </div>
           </div>
         </Box>
