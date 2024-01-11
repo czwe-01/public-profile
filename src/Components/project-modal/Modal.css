@@ -5,23 +5,10 @@
 .css-1koafzd {
   width: 90% !important;
 }
-.css-1kq1cvh {
-  width: 90% !important;
+.css-uvll2i {
   background: linear-gradient(#757575, var(--background), #757575) padding-box !important;
 }
 
-.css-1kq1cvh::-webkit-scrollbar {
-  width: 12px;
-  height: calc(100% - 1em);
-}
-.css-1kq1cvh::-webkit-scrollbar-track {
-  background: var(--eerie-black-1);
-}
-.css-1kq1cvh::-webkit-scrollbar-thumb {
-  background: var(--eerie-black-2);
-  border-radius: 20px;
-  border: 1px solid var(--vegas-gold);
-}
 .content-container {
   display: grid !important;
   margin-bottom: 1em;
@@ -46,9 +33,9 @@
 .preview-img {
   height: 220px;
   background-repeat: no-repeat;
-  background-size: 200%; /* Initial size */
-  background-position: 36% 42%; /* Initial position */
-  animation: pan 20s infinite; /* Apply the animation */
+  background-size: 200%;
+  background-position: 36% 42%;
+  animation: pan 20s infinite;
 }
 
 .link-buttom {
@@ -59,10 +46,9 @@
 
 .button-container {
   width: "100%";
-  justify-content: right;
 }
 .closeButton {
-  float: left;
+  float: right;
 }
 
 .stack {
@@ -141,5 +127,18 @@
   }
   .img-container {
     position: relative;
+  }
+
+  .css-uvll2i::-webkit-scrollbar {
+    width: 12px;
+    height: calc(100% - 1em);
+  }
+  .css-uvll2i::-webkit-scrollbar-track {
+    background: var(--eerie-black-1);
+  }
+  .css-uvll2i::-webkit-scrollbar-thumb {
+    background: var(--eerie-black-2);
+    border-radius: 20px;
+    border: 1px solid var(--vegas-gold);
   }
 }
