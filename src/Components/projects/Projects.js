@@ -13,7 +13,7 @@ function Projects({ filter }) {
       setData(projects);
     } else
       setData(projects.filter((project) => project.stack.includes(filter)));
-  }, [filter]);
+  }, [filter, projects]);
 
   return (
     <div className="project-list">
