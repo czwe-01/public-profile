@@ -100,28 +100,6 @@
         "year": "2023",
         "comment": "As part of my journey at Umuzi, I required to complete a National Certificate"
       }
-    ],
-    "badges": [
-      {
-        "name": "Double-Checked",
-        "year": "Sept 29, 2022",
-        "comment": " Updated a design more than 5 times to improve its presentation quality - Developers with this badge are likely to double check and confirm their work"
-      },
-      {
-        "name": "Single Shot",
-        "year": "Sept 29, 2022",
-        "comment": " Updated a project only once - Developers with this badge are able to follow guidelines or work brief in advance to prevent time delay during projects."
-      },
-      {
-        "name": "Peer Recognition",
-        "year": "Sept 29, 2022",
-        "comment": "Other developers liked the project of the developer - Developers with this badge are able to write high quality code that appeals to the aesthetic taste of developers in general"
-      },
-      {
-        "name": "Spotter",
-        "year": "Sept 29, 2022",
-        "comment": "The developer has identified an issue with the system, figured out a glitch or suggested an improvement to an existing function by taking part in our code bounty program."
-      }
     ]
   },
   "techStacks": [
@@ -149,8 +127,7 @@
       "stack": ["html", "css", "javascript"],
       "url": "https://ladiesinhygiene.netlify.app/",
       "description": "I was involved in building a website for a fumigation and hygiene startup business. I was responsible for the front-end development and design.",
-      "image": "ladies-in-hygien.png",
-      "previewImage": "preview-portfolio.png"
+      "image": "ladies-in-hygien.png"
     },
     {
       "name": "Personal website",
@@ -158,8 +135,7 @@
       "stack": ["html", "css", "javascript"],
       "url": "https://czwe-01.github.io/",
       "description": "This is the website you are currently on, my personal portfolio",
-      "image": "personal-website.png",
-      "previewImage": "preview-portfolio.png"
+      "image": "personal-website.png"
     },
 
     {
@@ -179,7 +155,6 @@
       "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-280-node-file-io-javascript",
       "description": "This is a program that allows you to create a new visitor, update the visitor, delete the visitor, view the visitor, get all the visitors, get the last visitor and delete all the visitors in a database.",
       "image": "node-&-file-io.png",
-      "previewImage": "preview-portfolio.png",
       "id": "280"
     },
     {
@@ -189,8 +164,7 @@
       "url": "https://public-portfolio-2ac34.web.app/",
       "description": "A public profile page that can act as a kind of portfolio. This page can be sent out to potential employers and make the job hunt easier.",
       "image": "portfolio.png",
-      "previewImage": "preview-portfolio.png",
-      "id": "280"
+      "previewImage": "preview-portfolio.png"
     },
     {
       "name": "React and Redux recipe search",
@@ -199,7 +173,7 @@
       "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-532-react-and-redux-recipe-search-part-1-presenting-the-form-javascript-react",
       "description": "I used React and Redux to build a kick-ass web app for searchung for recipes, This webapp uses edamam's API to fetch recipes and displays the relevant information for the user.",
       "image": "recipe-search.png",
-      "previewImage": "preview-portfolio.png",
+      "previewImage": "preview-recipe-search.png",
       "id": "532"
     },
     {
@@ -209,8 +183,7 @@
       "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-538-redux-saga-intro-javascript",
       "description": "Millitary game is a game in which the player has to kill all the enemies to accumulate points at each stage, without being killed three times.",
       "id": "538",
-      "image": "redux-saga-intro.png",
-      "previewImage": "preview-portfolio.png"
+      "image": "redux-saga-intro.png"
     },
     {
       "name": "QR conference connector",
@@ -227,7 +200,7 @@
       "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-794-contentitem-javascript-react",
       "description": "This an app that utilizes the phones camera to scan qr predefined codes and save the valid information to the phones database. You can add a note, favourite and delete a contact from the database",
       "id": "794",
-      "previewImage": "preview-portfolio.png",
+      "previewImage": "preview-qr-conference-connector.png",
       "image": "qr-conference-connector.png"
     },
     {
@@ -245,8 +218,7 @@
       ],
       "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-781-contentitem-javascript",
       "description": "This native app enables a paraglyder to glance at their phone and quickly see information about their position, speed and heading. The display is very easy to read and high contrast because the pilot will likely be outside in the sun. The phone will be on the plot's lap so the display will need to be easy to read from that distance. The display shows if the pilot is accelerating upwards or downwards.",
-      "id": "794",
-      "previewImage": "preview-portfolio.png",
+      "id": "781",
       "image": "simple-variometer.png"
     }
   ]

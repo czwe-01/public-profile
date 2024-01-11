@@ -1,5 +1,6 @@
 .project-modal-container {
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.61);
 }
 .css-1koafzd {
   width: 90% !important;
@@ -33,17 +34,29 @@
 
 .content {
   width: 100%;
+  padding-bottom: 1.62em;
 }
 .modal-img {
   width: 100%;
 }
 
-.modal-img.preview-img {
-  position: relative;
-  animation: pan 20s ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+.link-button {
+  width: 100%;
 }
+.preview-img {
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: 200%; /* Initial size */
+  background-position: 36% 42%; /* Initial position */
+  animation: pan 20s infinite; /* Apply the animation */
+}
+
+.link-buttom {
+  * {
+    margin: auto;
+  }
+}
+
 .button-container {
   width: "100%";
   justify-content: right;
@@ -55,7 +68,7 @@
 .stack {
   opacity: 1;
   color: var(--jet);
-  position: absolute;
+  position: relative;
   width: 90%;
   padding-bottom: 2em;
   div {
@@ -71,18 +84,53 @@
 
 @keyframes pan {
   0% {
-    background-position: 36% 42%;
+    background-position: 0% 0%;
+    background-size: 100%;
+  }
+
+  20% {
+    background-position: 0% 20%;
     background-size: 200%;
   }
 
+  25% {
+    background-position: 0% 50%;
+    background-size: 200%;
+  }
+
+  30% {
+    background-position: 25% 0%;
+    background-size: 200%;
+  }
+  35% {
+    background-position: 25% 30%;
+    background-size: 200%;
+  }
+
+  40% {
+    background-position: 25% 40%;
+    background-size: 200%;
+  }
   50% {
-    background-position: 49% 81%;
+    background-position: 90% 0%;
+    background-size: 200%;
+  }
+
+  60% {
+    background-position: 90% 10%;
     background-size: 300%;
   }
-
+  75% {
+    background-position: 90% 30%;
+    background-size: 300%;
+  }
+  90% {
+    background-position: 10% 50%;
+    background-size: 300%;
+  }
   100% {
-    background-position: 36% 42%;
-    background-size: 200%;
+    background-position: 0% 0%;
+    background-size: 100%;
   }
 }
 
