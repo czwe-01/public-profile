@@ -6,7 +6,6 @@ const appSlice = createSlice({
   initialState: { data: initialState, darkMode: false, project: {} },
   reducers: {
     toggleMode: (state) => {
-      console.log(state.darkMode);
       state.darkMode = !state.darkMode;
     },
   },

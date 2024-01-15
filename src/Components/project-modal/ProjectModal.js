@@ -1,6 +1,5 @@
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-
 import "./Modal.css";
 import { Chip } from "@mui/material";
 import IconBox from "../IconBox/IconBox";
@@ -24,10 +23,7 @@ const style = {
 export default function ProjectModal({ setOpen, open, project }) {
   const handleClose = () => {
     setOpen(false);
-    console.log(project);
   };
-
-  console.log(project);
 
   return (
     <div className="project-modal-container">
@@ -60,21 +56,6 @@ export default function ProjectModal({ setOpen, open, project }) {
                 className="modal-img"
               />
             </div>
-
-            <div className="content">
-              <h3>Description</h3>
-              {project.description}
-            </div>
-
-            {project.previewImage && (
-              <div
-                className="preview-img"
-                style={{
-                  backgroundImage: `url(${require(`../../images/projects/${project.previewImage}`)})`,
-                }}
-              ></div>
-            )}
-
             <div className="content">
               <h3>Languages and Technologies used</h3>
               <div className="stack">
@@ -95,6 +76,19 @@ export default function ProjectModal({ setOpen, open, project }) {
                 </div>
               </a>
             </div>
+            <div className="content desc">
+              <h3>Description</h3>
+              {project.description}
+            </div>
+
+            {project.previewImage && (
+              <div
+                className="preview-img"
+                style={{
+                  backgroundImage: `url(${require(`../../images/projects/${project.previewImage}`)})`,
+                }}
+              ></div>
+            )}
           </div>
         </Box>
       </Modal>
