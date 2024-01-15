@@ -21,6 +21,7 @@ function Project({ project }) {
 
         {project.image ? (
           <img
+            className="img"
             src={require(`../../images/projects/${project.image}`)}
             alt={project.name}
             loading="lazy"

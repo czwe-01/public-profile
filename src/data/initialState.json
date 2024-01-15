@@ -17,7 +17,7 @@
 
   "about": {
     "about_me": "Hi, I am Thulasizwe a front-end web and mobile app developer, I have worked on projects at every stage: from gathering initial requirements to deploying a finished product. My code is efficient, clean and tested. I am skilled at applying OO design principles and ensuring maximum re-usability of components. User-friendly and intuitive user interfaces are a must with any client-facing technology. My skills lie in creating intuitive, bug-free, and modern GUIs. My front-end framework of choice is React for web development and React Native for mobile app development.",
-    "cv": "https://docs.google.com/document/d/1XHGGAVwYCpPPgq8yzUa3XbBTDzyfK2laU6ZJuhz46Xc/edit?usp=sharing",
+    "cv": "https://drive.google.com/file/d/1WIyz6O6zsE30fqyMAGwcusorOxRbu80d/view?usp=drive_link",
     "education": [
       {
         "name": "umuzi.org",
@@ -153,7 +153,7 @@
         "file system"
       ],
       "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-280-node-file-io-javascript",
-      "description": "This is a program that allows you to create a new visitor, update the visitor, delete the visitor, view the visitor, get all the visitors, get the last visitor and delete all the visitors in a database.",
+      "description": "Developed a versatile backend service to efficiently capture and manage prospective student information at Umuzi. Key Features: Flexible Data Storage: Offers a choice between plain JSON files or a robust PostgreSQL database to suit diverse needs and preferences. User-Friendly Data Entry: Provides an intuitive web form powered by Express.js for seamless data entry, accessible at http://localhost:[YOUR_PORT]/new_visitor. Comprehensive API Endpoints: Exposes a RESTful API with endpoints for: Listing all visitors (GET /visitors), Creating new visitors (POST /visitors), Retrieving specific visitor details (GET /visitors/:id), Deleting specific visitors (DELETE /visitors/:id), Deleting all visitors (DELETE /visitors)  Updating existing visitor information (PUT /visitors/:id). Seamless User Experience: Employs the Pug template engine to render a 'Thank You' page upon successful visitor registration. \nImpact: Streamlines prospective student data collection and management at Umuzi, enhancing organizational efficiency and demonstrates proficiency in backend development, RESTful API design, data storage solutions, and web templating.",
       "image": "node-&-file-io.png",
       "id": "280"
     },
@@ -200,6 +200,7 @@
       "url": "https://github.com/Umuzi-org/Thulasizwe-Nkambule-794-contentitem-javascript-react",
       "description": "This an app that utilizes the phones camera to scan qr predefined codes and save the valid information to the phones database. You can add a note, favourite and delete a contact from the database",
       "id": "794",
+      "problem": "You are a part of an organizing team for a tech conference. A conference is a great place to network and meet like-minded geeks. A lot of the time, people who meet at a conference want to stay in touch after the event. This means that the attendees spend a lot of time trading contact information. This is a tedious and error prone thing to do. Your job is to solve this with technology!",
       "previewImage": "preview-qr-conference-connector.png",
       "image": "qr-conference-connector.png"
     },

@@ -17,14 +17,16 @@
 .img-container {
   width: 100%;
   position: relative;
+  column-span: 1/2;
 }
 
 .content {
   width: 100%;
   padding-bottom: 1.62em;
 }
-.modal-img {
-  width: 100%;
+
+.desc {
+  grid-column: 1/3;
 }
 
 .link-button {
